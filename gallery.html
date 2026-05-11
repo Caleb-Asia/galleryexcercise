@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Gallery</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero">
+            <h1>Gallery Showcase</h1>
+            <p>Browse landscapes, portraits, and architecture with smooth filtering and responsive layout.</p>
+        </section>
+
+        <section class="filter-panel">
+            <div class="filter-buttons" role="tablist" aria-label="Gallery filters">
+                <button class="filter-button active" data-filter="all" type="button">All</button>
+                <button class="filter-button" data-filter="architecture" type="button">Architecture</button>
+                <button class="filter-button" data-filter="landscapes" type="button">Landscapes</button>
+                <button class="filter-button" data-filter="portraits" type="button">Portraits</button>
+            </div>
+        </section>
+
+        <section class="gallery" aria-live="polite">
+            <article class="card" data-category="architecture">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1505842465776-3b2d279b3e5a?auto=format&fit=crop&w=1200&q=80" alt="Modern glass skyscraper">
+                    <div class="card-overlay">
+                        <p>Glass and steel geometry creating a sleek, contemporary silhouette.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">City Spire</div>
+                    <span class="card-tag">Architecture</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="portraits">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Portrait of smiling woman">
+                    <div class="card-overlay">
+                        <p>A thoughtful portrait with warm light and expressive eyes.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Golden Gaze</div>
+                    <span class="card-tag">Portraits</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="landscapes">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape at sunrise">
+                    <div class="card-overlay">
+                        <p>Sunrise light spilling over rugged peaks and misty valleys.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Dawn Ridge</div>
+                    <span class="card-tag">Landscapes</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="architecture">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Historic stone arch bridge">
+                    <div class="card-overlay">
+                        <p>A classic stone structure arching gracefully over a calm river.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Heritage Arch</div>
+                    <span class="card-tag">Architecture</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="portraits">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80" alt="Portrait of a woman with flowers">
+                    <div class="card-overlay">
+                        <p>Soft petals and quiet confidence captured in a single frame.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Floral Poise</div>
+                    <span class="card-tag">Portraits</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="landscapes">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Scenic waterfall in forest">
+                    <div class="card-overlay">
+                        <p>Water cascades through emerald woods, creating a peaceful scene.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Forest Falls</div>
+                    <span class="card-tag">Landscapes</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="architecture">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1494528974544-5455f95a6b20?auto=format&fit=crop&w=1200&q=80" alt="Minimal concrete museum building">
+                    <div class="card-overlay">
+                        <p>Minimal forms and textured concrete frame a quiet museum exterior.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Modern Museum</div>
+                    <span class="card-tag">Architecture</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="portraits">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Portrait of man outdoors">
+                    <div class="card-overlay">
+                        <p>Natural portraiture with candid expression and soft outdoor light.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Sunlit Reflection</div>
+                    <span class="card-tag">Portraits</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="landscapes">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Desert dunes at sunset">
+                    <div class="card-overlay">
+                        <p>Golden dunes ripple beneath a dramatic desert sunset.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Golden Dunes</div>
+                    <span class="card-tag">Landscapes</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="architecture">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="City skyline at dusk">
+                    <div class="card-overlay">
+                        <p>A striking skyline reflects the glow of evening lights.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Twilight Skyline</div>
+                    <span class="card-tag">Architecture</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="portraits">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Portrait of a young man in hat">
+                    <div class="card-overlay">
+                        <p>Striking portrait with bold contrast and modern styling.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Shadow Head</div>
+                    <span class="card-tag">Portraits</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll('.filter-button');
+        const cards = document.querySelectorAll('.card');
+
+        function setActiveButton(clickedButton) {
+            buttons.forEach(button => button.classList.remove('active'));
+            clickedButton.classList.add('active');
+        }
+
+        function filterCards(category) {
+            cards.forEach(card => {
+                const matches = category === 'all' || card.dataset.category === category;
+                card.classList.toggle('hidden', !matches);
+            });
+        }
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                setActiveButton(button);
+                filterCards(button.dataset.filter);
+            });
+        });
+    </script>
+</body>
+</html>

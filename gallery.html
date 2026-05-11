@@ -3,193 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Gallery</title>
-    <link rel="stylesheet" href="CSS/gallery.css">
+    <title>Gallery webpage</title>
+    <link rel="stylesheet" href="CSS/style1.css">
 </head>
 <body>
-    <main class="page-shell">
-        <section class="hero">
-            <h1>Gallery Showcase</h1>
-            <p>Browse landscapes, portraits, and architecture with smooth filtering and responsive layout.</p>
-        </section>
+    <header> 
+    <button>ALL</button>
+    <button>ARCHITECTURE</button>
+    <button>LANDSCAPEs</button>
+    <button>PORTRAITS</button>
+    </header>
+<div class="gallery"> 
+  <div class="container">
+    <h2>Pyramid of Giza</h2>
+    <img src="https://storage.architecturecompetitions.com/upload/09.01.2019/0520768b6ae55cac968c234aed5249e6.jpg" alt="Pyramid of Giza" class="image">
+    <div class="overlay">
+      <div class="text">This is a pyramid which was built in ancient Egypt.</div>
+    </div>
+  </div>
+  <div class="container">
+     <h2>Burj Khalifa</h2>
+    <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg?w=300" alt="Burj Khalifa" class="image">
+    <div class="overlay">
+      <div class="text">This is the tallest building in the world.</div>
+    </div>
+    </div>
+<div class="container">
+    <h2>Cologne Cathedral</h2>
+  <img src="https://preview.redd.it/gothic-cathedral-in-cologne-germany-v0-8iyrirmt27i81.jpg?width=1080&crop=smart&auto=webp&s=90b4e1ea7081d9eec26b00c738ad8f9b664ef10c" alt="Cologne Cathedral" class="image" >
+  <div class="overlay">
+    <div class="text">This is a historic cathedral in Cologne, Germany.</div>
+  </div>
+</div>
+<div class="container">
+    <h2>Neuschwanstein Castle</h2>
+  <img src="https://www.travelandleisure.com/thmb/Okqi4CwIGGsdj-Ci-JSN2ZEw8wc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/01-neuschwanstein-castle-bavaria-NEUSCHWANSTEIN0417-273a040698f24fc1ac22e717bb3f1f0c.jpg" alt="Neuschwanstein Castle" class="image" >
+  <div class="overlay">
+    <div class="text">This is a fairy-tale castle in Bavaria, Germany.</div>
+  </div>
+</div>
 
-        <section class="filter-panel">
-            <div class="filter-buttons" role="tablist" aria-label="Gallery filters">
-                <button class="filter-button active" data-filter="all" type="button">All</button>
-                <button class="filter-button" data-filter="architecture" type="button">Architecture</button>
-                <button class="filter-button" data-filter="landscapes" type="button">Landscapes</button>
-                <button class="filter-button" data-filter="portraits" type="button">Portraits</button>
-            </div>
-        </section>
+<div class="container">
+    <h2>Mount Everest</h2>
+  <img src="https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg?w=300" alt="Mount Everest" class="image">
+  <div class="overlay">
+    <div class="text">This is the tallest mountain in the world.</div>
+  </div>
+</div>
+<div class="container">
+    <h2>Grand Canyon</h2>
+  <img src="https://cdn.ta-petro.com/media/nxqheb4n/road-trip-to-grand-canyon.jpg?width=1600&height=1600&rnd=133912132595530000" alt="Grand Canyon" class="image">
+  <div class="overlay">
+    <div class="text">This is a famous natural landmark in the United States known for its stunning geological formations.</div>
+  </div>
+</div>
+<div class="container">
+    <h2>Muana Kea</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAawJ2RSL-5yGMOw2rej2nr4Jr-zdNKPy2Q&s" alt="Muana Kea" class="image">
+  <div class="overlay">
+    <div class="text">This is a dormant volcano loacted in Hawaii.</div>
+  </div>
+</div>
+<div class="container">
+    <h2>Nile River</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpP6wD19W_sipO46zwdwz4MMqVFdqzVZ5dw&s" alt="Nile River" class="image">
+  <div class="overlay">
+    <div class="text">An iconic river in Egypt known for its role in the development of ancient Egyptian civilization.</div>
+  </div>
+</div>
 
-        <section class="gallery" aria-live="polite">
-            <article class="card" data-category="architecture">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1505842465776-3b2d279b3e5a?auto=format&fit=crop&w=1200&q=80" alt="Modern glass skyscraper">
-                    <div class="card-overlay">
-                        <p>Glass and steel geometry creating a sleek, contemporary silhouette.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">City Spire</div>
-                    <span class="card-tag">Architecture</span>
-                </div>
-            </article>
+<div class="container">
+  <h2> Mona Lisa</h2>
+  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/09/Mona-Lisa-by-Leonardo-da-Vinci-1031x1536.jpg" alt="Mona Lisa" class="image">
+  <div class="overlay">
+    <div class="text"> Painting by Leonardo da Vinci, known for its enigmatic smile and artistic mastery.</div>
+  </div>
+</div>
+<div class="container">
+  <h2>Girl with the Pearl earrings</h2>
+  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Girl-with-a-Pearl.jpg" alt="Girl with the Pearl earrings" class="image">
+  <div class="overlay">
+    <div class="text">painting by Johannes Vermeer, depicting a young woman wearing a pearl earring.</div>
+  </div>
+</div>
+<div class="container">
+  <h2>Napoleon Crossing the Alps</h2>
+  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Napoleon-Crossing-the-Alps-1140x1389.jpg" alt="Napoleon Crossing the Alps" class="image">
+  <div class="overlay">
+    <div class="text">Painting by Jacques-Louis David, depicting Napoleon Bonaparte crossing the Alps.</div>
+  </div>
+</div>
+<div class="container">
+  <h2>American Gothic </h2>
+  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/American-Gothic-1140x1376.jpg" alt="American Gothic" class="image">
+  <div class="overlay">
+    <div class="text">Painting by Grant Wood, depicting a farmer and his daughter standing in front of a Gothic-style house.</div>
+  </div>
+</div>
 
-            <article class="card" data-category="portraits">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Portrait of smiling woman">
-                    <div class="card-overlay">
-                        <p>A thoughtful portrait with warm light and expressive eyes.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Golden Gaze</div>
-                    <span class="card-tag">Portraits</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="landscapes">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape at sunrise">
-                    <div class="card-overlay">
-                        <p>Sunrise light spilling over rugged peaks and misty valleys.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Dawn Ridge</div>
-                    <span class="card-tag">Landscapes</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="architecture">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Historic stone arch bridge">
-                    <div class="card-overlay">
-                        <p>A classic stone structure arching gracefully over a calm river.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Heritage Arch</div>
-                    <span class="card-tag">Architecture</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="portraits">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80" alt="Portrait of a woman with flowers">
-                    <div class="card-overlay">
-                        <p>Soft petals and quiet confidence captured in a single frame.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Floral Poise</div>
-                    <span class="card-tag">Portraits</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="landscapes">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Scenic waterfall in forest">
-                    <div class="card-overlay">
-                        <p>Water cascades through emerald woods, creating a peaceful scene.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Forest Falls</div>
-                    <span class="card-tag">Landscapes</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="architecture">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1494528974544-5455f95a6b20?auto=format&fit=crop&w=1200&q=80" alt="Minimal concrete museum building">
-                    <div class="card-overlay">
-                        <p>Minimal forms and textured concrete frame a quiet museum exterior.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Modern Museum</div>
-                    <span class="card-tag">Architecture</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="portraits">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Portrait of man outdoors">
-                    <div class="card-overlay">
-                        <p>Natural portraiture with candid expression and soft outdoor light.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Sunlit Reflection</div>
-                    <span class="card-tag">Portraits</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="landscapes">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Desert dunes at sunset">
-                    <div class="card-overlay">
-                        <p>Golden dunes ripple beneath a dramatic desert sunset.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Golden Dunes</div>
-                    <span class="card-tag">Landscapes</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="architecture">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="City skyline at dusk">
-                    <div class="card-overlay">
-                        <p>A striking skyline reflects the glow of evening lights.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Twilight Skyline</div>
-                    <span class="card-tag">Architecture</span>
-                </div>
-            </article>
-
-            <article class="card" data-category="portraits">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Portrait of a young man in hat">
-                    <div class="card-overlay">
-                        <p>Striking portrait with bold contrast and modern styling.</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Shadow Head</div>
-                    <span class="card-tag">Portraits</span>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <script>
-        const buttons = document.querySelectorAll('.filter-button');
-        const cards = document.querySelectorAll('.card');
-
-        function setActiveButton(clickedButton) {
-            buttons.forEach(button => button.classList.remove('active'));
-            clickedButton.classList.add('active');
-        }
-
-        function filterCards(category) {
-            cards.forEach(card => {
-                const matches = category === 'all' || card.dataset.category === category;
-                card.classList.toggle('hidden', !matches);
-            });
-        }
-
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                setActiveButton(button);
-                filterCards(button.dataset.filter);
-            });
-        });
-    </script>
+</div>
 </body>
 </html>

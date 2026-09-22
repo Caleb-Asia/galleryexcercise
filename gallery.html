@@ -1,106 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery webpage</title>
-    <link rel="stylesheet" href="CSS/style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Webpage</title>
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header> 
-    <button>ALL</button>
-    <button>ARCHITECTURE</button>
-    <button>LANDSCAPEs</button>
-    <button>PORTRAITS</button>
-    </header>
-<div class="gallery"> 
-  <div class="container">
-    <h2>Pyramid of Giza</h2>
-    <img src="https://storage.architecturecompetitions.com/upload/09.01.2019/0520768b6ae55cac968c234aed5249e6.jpg" alt="Pyramid of Giza" class="image">
-    <div class="overlay">
-      <div class="text">This is a pyramid which was built in ancient Egypt.</div>
-    </div>
-  </div>
-  <div class="container">
-     <h2>Burj Khalifa</h2>
-    <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg?w=300" alt="Burj Khalifa" class="image">
-    <div class="overlay">
-      <div class="text">This is the tallest building in the world.</div>
-    </div>
-    </div>
-<div class="container">
-    <h2>Cologne Cathedral</h2>
-  <img src="https://preview.redd.it/gothic-cathedral-in-cologne-germany-v0-8iyrirmt27i81.jpg?width=1080&crop=smart&auto=webp&s=90b4e1ea7081d9eec26b00c738ad8f9b664ef10c" alt="Cologne Cathedral" class="image" >
-  <div class="overlay">
-    <div class="text">This is a historic cathedral in Cologne, Germany.</div>
-  </div>
-</div>
-<div class="container">
-    <h2>Neuschwanstein Castle</h2>
-  <img src="https://www.travelandleisure.com/thmb/Okqi4CwIGGsdj-Ci-JSN2ZEw8wc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/01-neuschwanstein-castle-bavaria-NEUSCHWANSTEIN0417-273a040698f24fc1ac22e717bb3f1f0c.jpg" alt="Neuschwanstein Castle" class="image" >
-  <div class="overlay">
-    <div class="text">This is a fairy-tale castle in Bavaria, Germany.</div>
-  </div>
-</div>
+  <header>
+    <nav class="filter-bar" aria-label="Gallery filters">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+      <button type="button" class="filter-btn" data-filter="landscapes">Landscapes</button>
+      <button type="button" class="filter-btn" data-filter="portraits">Portraits</button>
+    </nav>
+  </header>
 
-<div class="container">
-    <h2>Mount Everest</h2>
-  <img src="https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg?w=300" alt="Mount Everest" class="image">
-  <div class="overlay">
-    <div class="text">This is the tallest mountain in the world.</div>
-  </div>
-</div>
-<div class="container">
-    <h2>Grand Canyon</h2>
-  <img src="https://cdn.ta-petro.com/media/nxqheb4n/road-trip-to-grand-canyon.jpg?width=1600&height=1600&rnd=133912132595530000" alt="Grand Canyon" class="image">
-  <div class="overlay">
-    <div class="text">This is a famous natural landmark in the United States known for its stunning geological formations.</div>
-  </div>
-</div>
-<div class="container">
-    <h2>Muana Kea</h2>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAawJ2RSL-5yGMOw2rej2nr4Jr-zdNKPy2Q&s" alt="Muana Kea" class="image">
-  <div class="overlay">
-    <div class="text">This is a dormant volcano loacted in Hawaii.</div>
-  </div>
-</div>
-<div class="container">
-    <h2>Nile River</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpP6wD19W_sipO46zwdwz4MMqVFdqzVZ5dw&s" alt="Nile River" class="image">
-  <div class="overlay">
-    <div class="text">An iconic river in Egypt known for its role in the development of ancient Egyptian civilization.</div>
-  </div>
-</div>
+  <main class="gallery">
+    <article class="gallery-card" data-category="architecture">
+      <img src="https://storage.architecturecompetitions.com/upload/09.01.2019/0520768b6ae55cac968c234aed5249e6.jpg" alt="Pyramid of Giza">
+      <div class="overlay">
+        <h2>Pyramid of Giza</h2>
+        <p>This is a pyramid built in ancient Egypt.</p>
+      </div>
+    </article>
 
-<div class="container">
-  <h2> Mona Lisa</h2>
-  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/09/Mona-Lisa-by-Leonardo-da-Vinci-1031x1536.jpg" alt="Mona Lisa" class="image">
-  <div class="overlay">
-    <div class="text"> Painting by Leonardo da Vinci, known for its enigmatic smile and artistic mastery.</div>
-  </div>
-</div>
-<div class="container">
-  <h2>Girl with the Pearl earrings</h2>
-  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Girl-with-a-Pearl.jpg" alt="Girl with the Pearl earrings" class="image">
-  <div class="overlay">
-    <div class="text">painting by Johannes Vermeer, depicting a young woman wearing a pearl earring.</div>
-  </div>
-</div>
-<div class="container">
-  <h2>Napoleon Crossing the Alps</h2>
-  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Napoleon-Crossing-the-Alps-1140x1389.jpg" alt="Napoleon Crossing the Alps" class="image">
-  <div class="overlay">
-    <div class="text">Painting by Jacques-Louis David, depicting Napoleon Bonaparte crossing the Alps.</div>
-  </div>
-</div>
-<div class="container">
-  <h2>American Gothic </h2>
-  <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/American-Gothic-1140x1376.jpg" alt="American Gothic" class="image">
-  <div class="overlay">
-    <div class="text">Painting by Grant Wood, depicting a farmer and his daughter standing in front of a Gothic-style house.</div>
-  </div>
-</div>
+    <article class="gallery-card" data-category="architecture">
+      <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg?w=300" alt="Burj Khalifa">
+      <div class="overlay">
+        <h2>Burj Khalifa</h2>
+        <p>This is the tallest building in the world.</p>
+      </div>
+    </article>
 
-</div>
+    <article class="gallery-card" data-category="architecture">
+      <img src="https://preview.redd.it/gothic-cathedral-in-cologne-germany-v0-8iyrirmt27i81.jpg?width=1080&crop=smart&auto=webp&s=90b4e1ea7081d9eec26b00c738ad8f9b664ef10c" alt="Cologne Cathedral">
+      <div class="overlay">
+        <h2>Cologne Cathedral</h2>
+        <p>This is a historic cathedral in Cologne, Germany.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="architecture">
+      <img src="https://www.travelandleisure.com/thmb/Okqi4CwIGGsdj-Ci-JSN2ZEw8wc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/01-neuschwanstein-castle-bavaria-NEUSCHWANSTEIN0417-273a040698f24fc1ac22e717bb3f1f0c.jpg" alt="Neuschwanstein Castle">
+      <div class="overlay">
+        <h2>Neuschwanstein Castle</h2>
+        <p>This is a fairy-tale castle in Bavaria, Germany.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="landscapes">
+      <img src="https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg?w=300" alt="Mount Everest">
+      <div class="overlay">
+        <h2>Mount Everest</h2>
+        <p>This is the tallest mountain in the world.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="landscapes">
+      <img src="https://cdn.ta-petro.com/media/nxqheb4n/road-trip-to-grand-canyon.jpg?width=1600&height=1600&rnd=133912132595530000" alt="Grand Canyon">
+      <div class="overlay">
+        <h2>Grand Canyon</h2>
+        <p>A famous natural landmark in the United States.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="landscapes">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAawJ2RSL-5yGMOw2rej2nr4Jr-zdNKPy2Q&s" alt="Mauna Kea">
+      <div class="overlay">
+        <h2>Mauna Kea</h2>
+        <p>A dormant volcano located in Hawaii.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="landscapes">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpP6wD19W_sipO46zwdwz4MMqVFdqzVZ5dw&s" alt="Nile River">
+      <div class="overlay">
+        <h2>Nile River</h2>
+        <p>An iconic river in Egypt celebrated for its history.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="portraits">
+      <img src="https://www.singulart.com/blog/wp-content/uploads/2023/09/Mona-Lisa-by-Leonardo-da-Vinci-1031x1536.jpg" alt="Mona Lisa">
+      <div class="overlay">
+        <h2>Mona Lisa</h2>
+        <p>A painting by Leonardo da Vinci with a timeless smile.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="portraits">
+      <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Girl-with-a-Pearl.jpg" alt="Girl with a Pearl Earring">
+      <div class="overlay">
+        <h2>Girl with a Pearl Earring</h2>
+        <p>A famous painting by Johannes Vermeer.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="portraits">
+      <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Napoleon-Crossing-the-Alps-1140x1389.jpg" alt="Napoleon Crossing the Alps">
+      <div class="overlay">
+        <h2>Napoleon Crossing the Alps</h2>
+        <p>A dramatic historical painting by Jacques-Louis David.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card" data-category="portraits">
+      <img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/American-Gothic-1140x1376.jpg" alt="American Gothic">
+      <div class="overlay">
+        <h2>American Gothic</h2>
+        <p>A classic painting by Grant Wood.</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedFilter = button.dataset.filter;
+
+        filterButtons.forEach((btn) => btn.classList.toggle('active', btn === button));
+
+        galleryCards.forEach((card) => {
+          const matches = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+          card.style.display = matches ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
